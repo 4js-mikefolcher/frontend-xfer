@@ -1,0 +1,38 @@
+LAYOUT
+   VBOX
+      GRID
+{
+<g "Send Data"                                                           >
+ [fld001                                                                ]
+ [                                                                      ]
+ [                                                                      ]
+ [                                                                      ]
+ [                                                                      ]
+ [                                                                      ]
+<                                                                        >
+
+<g "Receive Data"                                                        >
+ [fld002                                                                ]
+ [                                                                      ]
+ [                                                                      ]
+ [                                                                      ]
+ [                                                                      ]
+ [                                                                      ]
+<                                                                        >
+}
+      END --GRID
+   END --VBOX
+END --LAYOUT
+
+ATTRIBUTES
+
+   TEXTEDIT fld001 = formonly.send_data;
+   TEXTEDIT fld002 = formonly.receive_data;
+
+END --ATTRIBUTES
+
+INSTRUCTIONS
+
+   SCREEN RECORD s_record (formonly.send_data, formonly.receive_data);
+
+END --INSTRUCTIONS
